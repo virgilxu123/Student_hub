@@ -1,4 +1,36 @@
-<?php include 'headr.php'; ?>
+<?php
+    require_once 'connection.php';
+    include 'register.php';
+    include 'login.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="css\styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="logo">
+            <img src="images\ACCSlconNavigation.png" alt="">
+        </div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#">Announcements</a>
+            <a href="#events">Events</a>
+            <a href="#">Forum</a>
+        </div>
+        <div class="log">
+            <div class="log-container">
+                <button id="login">Login <i style='font-size:1rem;margin-left:.2rem;' class='fas'>&#xf406;</i> </button>
+            </div>
+        </div>
+    </div>
+
 
 <!-- Home -->
     <div id="home">
@@ -14,22 +46,6 @@
             <img src="images\student.png" alt="">
         </div>
     </div>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <form action="" method="post" class="form">
-                <input type="text" placeholder="First name">
-                <input type="text" placeholder="Last name">
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
-                <input type="password" placeholder="Confirm password">
-                <input type="button" value="Register">
-            </form>
-        </div>
-    </div>
-    <!-- The Modal -->
 <!-- Home -->
 <!-- Events -->
     <h1 class="h1">EVENTS</h1>
@@ -57,7 +73,9 @@
                 <p class="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima architecto sequi rerum impedit fugit veritatis.</p>  
             </div>
         </div>
-    </div>
 <!-- Events -->
     <script src="script\script.js"></script>
-<?php include 'footer.php'; ?>
+    <script src="script\login.js"></script>
+    </div>
+</body>
+</html>

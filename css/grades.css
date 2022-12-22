@@ -1,0 +1,50 @@
+.input-cont2 {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.options2 {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-top: 10px;
+    align-items: space-between;
+    line-height: 35px;
+    color: rgb(0, 0, 0, 0.8);
+}
+    .options2 select, .options2 input {
+        padding: 7px 5px;
+        border-style: none;
+        border-bottom: 4px solid rgb(0, 123, 255);
+        font-size: 16px;
+        color: rgb(0, 0, 0, 0.6);
+    }
+
+.tbl-grades {
+    width: 70%;
+    background-color: aliceblue;
+    padding: 10px 0;
+    margin-left: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 3px 6px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 3px 6px 1px rgba(0,0,0,0.75);
+}
+.thead-grades {
+    color: aliceblue;
+    background-color: #227C70;
+}
+.th-col {
+    padding: 5px 0;
+}
+.sched {
+    line-height: 35px;
+}
+h5 {
+    background-color: #e69823;
+    width: 100%;
+    padding: 2px 10px;
+    color: rgb(255, 255, 255);
+
+}

@@ -1,0 +1,90 @@
+    * {
+        margin: 0;
+        font-family:  "Source Sans Pro", Helvetica, sans-serif;
+    }
+    html {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    body {
+        background-image: url("../images/whitebg.jpg");
+    }
+    .container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 15% 85%;
+    }
+    .sidenav {
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        width: 15%;
+        height: 100vh;
+        box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.75);
+    }
+        .sidenav a {
+            padding: 12px 0px 12px 32px;
+            text-decoration: none;
+            font-size: 16px;
+            color: rgb(251, 251, 251, 0.8);
+            display: block;
+            grid-area: side;
+            transition: 0.2s;
+        }
+        .sidenav a:is(:link, :active, :visited).active {
+            background-color: rgb(0, 123, 255);
+            color: rgba(255, 255, 255);
+            box-shadow: 0px 0px 2px 2px rgba(53, 51, 61, 0.75);
+            -webkit-box-shadow: 0px 0px 2px 2px rgba(54, 53, 58, 0.75);
+            -moz-box-shadow: 0px 0px 2px 2px rgba(49, 47, 57, 0.75);
+        }
+        .sidenav a:hover {
+            background-color: rgb(0, 123, 255, 0.2);
+        }
+    .nav-cont {
+        margin-top: 1vh;
+    }
+    .content-container {
+        grid-column: 2;
+    }
+    .home-content table {
+        line-height: 30px;
+        color: rgb(0, 0, 0, 0.8);
+        font-size: 16px;
+        margin: 2vh 0 0 3vh;
+        width: 40%;
+        padding: 2vh 0 2vh 2vh;
+        box-shadow: 2px 3px 6px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 2px 3px 6px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 3px 6px 1px rgba(0,0,0,0.75);
+        background-color:aliceblue;
+        border-radius: 10px;
+        border: solid 0.5px rgba(5,5,5,0.2);
+    }
+    .card {
+        padding: 0.7vw 1vw;
+        width: 50%;
+        margin: 5vh 0 0 3vh;
+        background-color:aliceblue;
+        line-height: 26px;
+        color: rgb(0, 0, 0, 0.8);
+        border-radius: 10px;
+        box-shadow: 2px 3px 6px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 2px 3px 6px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 3px 6px 1px rgba(0,0,0,0.75);
+    }
+    .card a {
+        font-weight: 600;
+        text-decoration:none;
+        background-color:#C82121;
+        padding:4px 8px;
+        color:rgb(255, 255, 255);
+        border-radius:10px;
+        box-shadow: 2px 2px 2px 0px rgba(39, 38, 38, 0.7);
+        -webkit-box-shadow: 1px 1px 1px 0px rgba(31, 29, 29, 0.7);
+        -moz-box-shadow: 1px 1px 1px 0px rgba(39, 38, 38, 0.7);
+    }
+        .card a:hover {
+            background-color:#760606;
+        }
