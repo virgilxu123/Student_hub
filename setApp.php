@@ -78,7 +78,7 @@
             </form>
             <hr>
             <div>
-                <h3 class="h3-app"><?php echo $message; ?></h3>
+                <h5 class="h3-app"><?php echo $message; ?></h5>
                 <div>
                         <?php
 

@@ -23,3 +23,51 @@
 .sched td {
     padding-left: 10px;
 }
+.print-btn {
+    padding: 3% 0 0 3%;
+}
+    .print-btn p {
+        background-color: rgb(23, 183, 39);
+        width: fit-content;
+        padding: 7px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: 700;
+        color: rgb(0, 0, 0, 0.8);
+        box-shadow: 2px 3px 6px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 2px 3px 6px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 3px 6px 1px rgba(0,0,0,0.75);
+    }
+    .print-btn p:hover {
+        background-color: rgb(6, 133, 19);
+    }
+
+@media print {
+    .content-container {
+    }
+    .sub-table {
+        width: 100%;
+        margin: 0;
+        border-style: none;
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+        color: black;
+    }
+    .sub-label {
+        display: none;
+    }
+    .sidenav {
+        display: none;
+    }
+    .print-area {
+        display: block;
+        padding-left: 5%;
+    }
+    .print-btn {
+        display: none;
+    }
+    .container {
+        display: block;
+    }
+}
