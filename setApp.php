@@ -3,18 +3,27 @@
     include 'sidenav.php'; 
     require_once 'connection.php'; 
 
+    $error_message = '';
     if($_SERVER["REQUEST_METHOD"] == "POST") {
         if($_POST["submit"] == "Submit") {
             $sql = 'INSERT INTO appointment (date, studentid, office, reason) VALUES (?, ?, ?, ?)';
             $stmt = $conn->prepare($sql);
             $stmt->bind_param('ssss', $date, $studentid, $office, $reason);
-            $date = $_POST['schedule'];
-            $studentid = $_SESSION['id'];
-            $office = $_POST['office'];
-            $reason = $_POST['reason'];
-            $stmt->execute();
-            header('Location: setApp.php');
-            exit;
+            if(!$_POST['schedule'] || !$_POST['office'] || !$_POST['reason']) {
+                $error_message = 'Please fill in all fields!';
+            }else {
+                if(time() > strtotime($_POST['schedule'])){
+                    $error_message = 'Date not valid!';
+                }else {
+                    $date = $_POST['schedule'];
+                    $studentid = $_SESSION['id'];
+                    $office = $_POST['office'];
+                    $reason = $_POST['reason'];
+                    $stmt->execute();
+                    header('Location: setApp.php');
+                    exit;
+                }
+            }
         }
         if ($_POST['submit'] == "Cancel") {
             $sql = "DELETE FROM appointment WHERE appointmentid = ?";
@@ -73,7 +82,7 @@
                         <input type="date" name="schedule">
                     </div>
                 </div>
-                
+                <p class="err-msg"><i><?php echo $error_message; ?></i></p>
                 <input type="submit" name="submit" value="Submit" class="set">
             </form>
             <hr>

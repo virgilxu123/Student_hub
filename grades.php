@@ -29,7 +29,7 @@
                 <h1 style="padding:0.5vw 2vw;color:white;">Grades</h1>
                 
             </div>
-            <h5>Notice:All grades posted in this portal are only valid and official if it tallies with the record's of the Registrar's office.</h5>
+            <h5>Notice:All grades posted in this portal are only valid and official if it tallies with the records of the Registrar's office.</h5>
             <form action="" method="post">
                 <div class="input-cont2">
                     <div class="options2">

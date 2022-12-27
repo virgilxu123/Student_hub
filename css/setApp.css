@@ -90,3 +90,7 @@
     background-color: #af0000;
     
 }
+.err-msg {
+    padding: 5px 15px;
+    color: rgba(255, 0, 0, 0.8);
+}

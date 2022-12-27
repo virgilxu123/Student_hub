@@ -40,9 +40,9 @@
                     // Check if username exists, if yes then verify password
                     if($stmt->num_rows() == 1){
                         // Bind result variables
-                        $stmt->bind_result($uname, $studid, $pword);
+                        $stmt->bind_result($uname, $studid, $hash);
                         if($stmt->fetch()){
-                            if($password == $pword){
+                            if(password_verify($password, $hash)){
                                 // Password is correct, so start a new session
                                 session_start();
                                 // Store data in session variables

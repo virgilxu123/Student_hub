@@ -83,16 +83,22 @@
     // Include config file
     require_once "connection.php";
     // Define variables and initialize with empty values
-    
+    $err_msg = "";
     if($_SERVER["REQUEST_METHOD"] == "POST")    {
         if ($_POST["submit"] == "Register") {
             $studentid = $_POST["studentid"];
             $username = $_POST["username"];
             $password = $_POST["password"];
             $confirm_pword = $_POST["confirm_pword"];
-            $stmt = $conn->prepare("INSERT INTO users (username, studentid, password) VALUES (?, ?, ?)");
-            $stmt->bind_param("sss", $username, $studentid, $password);
-            $stmt->execute();
+            if($password != $confirm_pword) {
+                $err_msg = 'Password did not match';
+            } else {
+                $hash = password_hash($password,PASSWORD_DEFAULT);
+                $stmt = $conn->prepare("INSERT INTO users (username, studentid, password) VALUES (?, ?, ?)");
+                $stmt->bind_param("sss", $username, $studentid, $hash);
+                $stmt->execute();
+            }
+            
         }
     }
     
