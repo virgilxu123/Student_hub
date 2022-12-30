@@ -4,7 +4,7 @@
     require_once 'connection.php'; 
 
     $error_message = '';
-    if($_SERVER["REQUEST_METHOD"] == "POST") {
+    if(isset($_POST['submit'])) {
         if($_POST["submit"] == "Submit") {
             $sql = 'INSERT INTO appointment (date, studentid, office, reason) VALUES (?, ?, ?, ?)';
             $stmt = $conn->prepare($sql);
@@ -20,8 +20,6 @@
                     $office = $_POST['office'];
                     $reason = $_POST['reason'];
                     $stmt->execute();
-                    header('Location: setApp.php');
-                    exit;
                 }
             }
         }
@@ -31,8 +29,6 @@
             $stmt->bind_param('s', $appointment_id);
             $appointment_id = $_POST['appointmentid'];
             $stmt->execute();
-            header('Location: setApp.php');
-            exit;
         }
 
     }

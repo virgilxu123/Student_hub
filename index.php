@@ -38,7 +38,7 @@
             <div class="container">
                 <p class="left-content1">Welcome to College of Information Technology Education</p>
                 <p class="left-content2">Student Hub</p>
-                <p class="left-content3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque numquam consequuntur velit quaerat fugit nisi sunt aspernatur omnis dignissimos debitis quidem ipsa quod quisquam eligendi, corrupti, exercitationem aut ut perspiciatis.</p>
+                <p class="left-content3">Student Hubs runs programmes in partnership with universities to enhance student experience, develop employability and improve retention through practical volunteering, skilled placements, in-curriculum projects and project incubation.</p>
                 <button class="left-content4" id="myBtn">Register</button>
             </div>
         </div>
@@ -60,17 +60,17 @@
             <div class="act">
                 <img src="images\4.jpg" alt="">
                 <p class="p1">Day 1 Activity</p>
-                <p class="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima architecto sequi rerum impedit fugit veritatis.</p>  
+                <p class="p2">Opening of CITE and IT Lympics Day. College of Information Technology Education have their opening parade lead by the NEMSU DBC and ROTC, followed by respectives faculty and staffs headed by Dr. Born Christian A. Isip together with the ACSS officers headed by Gov. Beverly Napal and with the CITE students.</p>  
             </div>
             <div class="act">
                 <img src="images\laboratory1.jpg" alt=""> 
                 <p class="p1">Day 2 Activity</p>
-                <p class="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima architecto sequi rerum impedit fugit veritatis.</p>             
+                <p class="p2">Activities started on the 2nd day of CTIE and IT Lympics Day. Events are held on its specifiedlocation inside campus and is associated with officers and committees in every events.</p>             
             </div>
             <div class="act">
                 <img src="images\2.jpg" alt="">
                 <p class="p1">Day 3 Activity</p>
-                <p class="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima architecto sequi rerum impedit fugit veritatis.</p>  
+                <p class="p2">Mr. & ms. CITE is held at NEMSU Gymnasium. All CITE faculty and staff join the said event toether with the students from 1st year to 4th year. Giving their round applause in each of their candidate up to the last part of the night event. Announcement of winners is also included.</p>  
             </div>
         </div>
 <!-- Events -->
